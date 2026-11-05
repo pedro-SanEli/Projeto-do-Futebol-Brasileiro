@@ -1,0 +1,637 @@
+
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f4;
+    color: #17231c;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+.header {
+    background: #064b30;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #c9f31d;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c9f31d;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =================================
+   BANNER PRINCIPAL
+================================= */
+
+.hero {
+    min-height: 450px;
+
+    background:
+        linear-gradient(
+            rgba(0, 40, 20, 0.85),
+            rgba(0, 40, 20, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1800&q=85");
+
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.hero-tag {
+    color: #c9f31d;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #e0e9e3;
+}
+
+.btn {
+    display: inline-block;
+    background: #c9f31d;
+    color: #064b30;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   CONTAINER E TÍTULOS
+================================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.section {
+    padding-top: 60px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title span {
+    color: #087443;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #064b30;
+    margin: 10px 0;
+}
+
+.section-title p {
+    color: #68746c;
+    line-height: 1.6;
+}
+
+.descricao {
+    color: #68746c;
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   INDICADORES
+================================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    border: 1px solid #e5ece6;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card span {
+    font-size: 30px;
+}
+
+.stat-card h3 {
+    margin: 15px 0 7px;
+    color: #087443;
+}
+
+.stat-card p {
+    color: #68746c;
+    font-size: 13px;
+}
+
+
+/* =================================
+   CARDS DE COMPETIÇÕES E NOTÍCIAS
+================================= */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e5ece6;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.09);
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.info-card h3 {
+    color: #087443;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #68746c;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   BRASILEIRÃO
+================================= */
+
+.points-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.point-card {
+    background: #064b30;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    color: white;
+}
+
+.point-card h3 {
+    color: #c9f31d;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.explanation {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    line-height: 1.8;
+    border: 1px solid #e5ece6;
+}
+
+.explanation h3 {
+    color: #087443;
+    margin-bottom: 12px;
+}
+
+.explanation p {
+    color: #68746c;
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   PESQUISA DE CLUBES
+================================= */
+
+.search-area {
+    display: flex;
+    width: 100%;
+    background: white;
+    border: 1px solid #dce5de;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.search-area:focus-within {
+    border-color: #087443;
+    box-shadow: 0 0 0 3px rgba(8,116,67,0.1);
+}
+
+.search-area input {
+    flex: 1;
+    padding: 17px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    min-width: 0;
+}
+
+.search-area button {
+    padding: 0 22px;
+    background: #087443;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-area button:hover {
+    background: #064b30;
+}
+
+
+/* =================================
+   RESULTADOS DA PESQUISA
+================================= */
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.resultado-clube {
+    background: white;
+    border: 1px solid #e1e8e2;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 9px;
+    font-weight: bold;
+    color: #064b30;
+    transition: 0.2s;
+}
+
+.resultado-clube:hover {
+    background: #eaf5ed;
+    border-color: #087443;
+}
+
+.mensagem-vazia {
+    padding: 20px;
+    background: white;
+    color: #68746c;
+    border-radius: 10px;
+}
+
+
+/* =================================
+   PERFIL DO CLUBE
+================================= */
+
+.perfil-clube {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e1e8e2;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    margin-top: 20px;
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.perfil-topo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5ece6;
+}
+
+.perfil-topo img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.perfil-topo h2 {
+    color: #087443;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.perfil-topo p {
+    color: #68746c;
+}
+
+.dados-clube {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.dado {
+    background: #f4f7f4;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #087443;
+}
+
+.dado strong {
+    display: block;
+    color: #087443;
+    margin-bottom: 12px;
+}
+
+.dado p {
+    color: #4e5b52;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.historia {
+    background: #eaf5ed;
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.historia h3 {
+    color: #064b30;
+    margin-bottom: 12px;
+}
+
+.historia p {
+    color: #4e5b52;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   RODAPÉ
+================================= */
+
+.footer {
+    background: #063b27;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-content h2 {
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    color: #c6d8cd;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-links a:hover {
+    color: #c9f31d;
+}
+
+.copyright {
+    font-size: 12px;
+    border-top: 1px solid #ffffff25;
+    padding-top: 20px;
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 950px) {
+
+    .stats-grid,
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dados-clube {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 17px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #064b30;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 35px 22px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .stats-grid,
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .points-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dados-clube {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-clube {
+        padding: 20px;
+    }
+
+    .perfil-topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .perfil-topo h2 {
+        font-size: 23px;
+    }
+
+    .container {
+        padding: 35px 17px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+}
