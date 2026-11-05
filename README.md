@@ -10,7 +10,7 @@ O projeto foi desenvolvido utilizando **HTML5, CSS3 e JavaScript**, com foco em 
 
 ## 🌐 Acesse o projeto
 
-🚀 **Site online:** [Futebol Brasil](COLOQUE_AQUI_O_LINK_DO_VERCEL)
+🚀 **Site online:** [Futebol Brasil](https://projeto-do-futebol-brasileiro.vercel.app/)
 
 ---
 
